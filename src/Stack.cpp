@@ -162,3 +162,10 @@ Stack &Stack::operator+=(const Stack &other) {
     *this = *this + other;
     return *this;
 }
+// Copy assignment operator
+Stack& Stack::operator=(const Stack &other) {
+    if (this != &other) {
+        m_vector = other.m_vector;
+    }
+    return *this;
+}

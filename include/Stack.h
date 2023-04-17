@@ -15,7 +15,7 @@ public:
     explicit Stack(size_t size = 0, int value = 0);
     Stack(const Stack& other);
     Stack(Stack&& other) noexcept;
-
+    Stack& operator=(const Stack &other);
     Stack& operator+=(int number);
     Stack& operator-=(int number);
     Stack& operator+=(const Stack& other);
